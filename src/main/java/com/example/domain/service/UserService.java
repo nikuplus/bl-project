@@ -16,8 +16,8 @@ public class UserService {
  /**
   * リクエストをDBに登録する.
   *
-  * @param
-  * @return
+  * @param request リクエスト
+  * @return 登録結果
   */
     public String setMyTable(Contes request) {
         myDbRepository.save(
