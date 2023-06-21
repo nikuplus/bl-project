@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/controller")
 @RequiredArgsConstructor
 public class ControllerA {
-
     private final UserService userService;
 
     /**

@@ -20,6 +20,7 @@ public class UserService {
   * @return 登録結果
   */
     public String setMyTable(Contes request) {
+
         myDbRepository.save(
                 MytableEntity.builder()
                         .id(Integer.parseInt(request.getSex()))
