@@ -1,6 +1,6 @@
 package com.example.domain.service;
 
-import com.example.application.resource.Contes;
+import com.example.application.resource.SampleFormRequest;
 import com.example.infrastructure.entity.MytableEntity;
 import com.example.infrastructure.repository.MyDbRepository;
 import lombok.RequiredArgsConstructor;
@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 @RequiredArgsConstructor
-public class UserService {
+public class SampleFormService {
  private final MyDbRepository myDbRepository;
 
  /**
@@ -19,7 +19,7 @@ public class UserService {
   * @param request リクエスト
   * @return 登録結果
   */
-    public String setMyTable(Contes request) {
+    public String setMyTable(SampleFormRequest request) {
 
         myDbRepository.save(
                 MytableEntity.builder()
