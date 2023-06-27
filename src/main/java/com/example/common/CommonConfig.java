@@ -6,8 +6,8 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 
 @Configuration
 public class CommonConfig {
-    @Bean
-    public CharacterEncodingFilter characterEncodingFilter() {
-        return new SJISCharacterEncodingFilter();
-    }
+  @Bean
+  public CharacterEncodingFilter characterEncodingFilter() {
+    return new SJISCharacterEncodingFilter();
+  }
 }

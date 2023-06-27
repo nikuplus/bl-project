@@ -11,22 +11,21 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @RequiredArgsConstructor
 public class SampleFormService {
- private final MyDbRepository myDbRepository;
+  private final MyDbRepository myDbRepository;
 
- /**
-  * リクエストをDBに登録する.
-  *
-  * @param request リクエスト
-  * @return 登録結果
-  */
-    public String setMyTable(SampleFormRequest request) {
+  /**
+   * リクエストをDBに登録する.
+   *
+   * @param request リクエスト
+   * @return 登録結果
+   */
+  public String setMyTable(SampleFormRequest request) {
 
-        myDbRepository.save(
-                MytableEntity.builder()
-                        .id(Integer.parseInt(request.getSex()))
-                        .name(request.getName())
-                        .build()
-        );
-        return "おっけー,やったー";
-    }
+    myDbRepository.save(
+        MytableEntity.builder()
+            .id(Integer.parseInt(request.getSex()))
+            .name(request.getName())
+            .build());
+    return "おっけー,やったー";
+  }
 }

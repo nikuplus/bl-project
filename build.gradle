@@ -2,6 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.12'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id "com.diffplug.spotless" version "6.19.0"
 }
 
 group = 'com.example'
@@ -16,6 +17,14 @@ configurations {
 
 repositories {
 	mavenCentral()
+}
+
+apply plugin: "com.diffplug.spotless"
+
+spotless {
+	java {
+		googleJavaFormat('1.8')
+	}
 }
 
 dependencies {
