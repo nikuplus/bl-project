@@ -1,7 +1,7 @@
-package com.example.application.controller;
+package com.example.controller;
 
-import com.example.application.resource.SampleFormRequest;
-import com.example.domain.service.SampleFormService;
+import com.example.dto.SampleFormRequest;
+import com.example.service.SampleFormService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

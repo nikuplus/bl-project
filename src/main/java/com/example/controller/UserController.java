@@ -1,6 +1,6 @@
-package com.example.application.controller;
+package com.example.controller;
 
-import com.example.application.resource.User;
+import com.example.dto.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

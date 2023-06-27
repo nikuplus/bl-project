@@ -1,4 +1,4 @@
-package com.example.application.resource;
+package com.example.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

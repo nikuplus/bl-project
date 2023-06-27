@@ -1,8 +1,8 @@
-package com.example.domain.service;
+package com.example.service;
 
-import com.example.application.resource.SampleFormRequest;
-import com.example.infrastructure.entity.MytableEntity;
-import com.example.infrastructure.repository.MyDbRepository;
+import com.example.dto.SampleFormRequest;
+import com.example.entity.MytableEntity;
+import com.example.repository.MyDbRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

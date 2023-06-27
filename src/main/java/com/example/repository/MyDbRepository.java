@@ -1,6 +1,6 @@
-package com.example.infrastructure.repository;
+package com.example.repository;
 
-import com.example.infrastructure.entity.MytableEntity;
+import com.example.entity.MytableEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
