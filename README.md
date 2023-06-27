@@ -7,3 +7,9 @@
 * Shift-JISのリクエストを取得
 * レスポンスをShift-JISで返す
 * UTのリクエストにShift-JISを指定（実装予定）
+
+### EntryJsonAPI（これから実装）
+* jsonの取得
+* リクエストのチェック処理
+* DBに登録
+* 登録結果をjsonで返却
